@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from time import time
 
 print(os.getcwd()) #get current working directory
 os.chdir('C:/Users/satykumar/PycharmProjects') #change directory
@@ -18,7 +18,7 @@ os.rename('FIRST.py','first.py') #to rename
 print(os.stat('first.py').st_size)
 print(os.stat('first.py').st_mtime)
 rad=os.stat('first.py').st_mtime
-print(datetime.fromtimestamp(rad)) #modified time in IST
+print(time.fromtimestamp(rad)) #modified time in IST
 
 for dirpath,dirnames,filenames in os.walk('C:/Users/satykumar/PycharmProjects/Python'): #to check files within directories
     print('dirpath',dirpath)

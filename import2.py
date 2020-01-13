@@ -2,7 +2,7 @@ import sys
 sys.path.append('/Users\satykumar\Desktop/My-Modules')#better way to add env file in path in windows
 
 #importing other
-import datetime
+import time
 import calendar
 import math
 import random
@@ -11,7 +11,7 @@ courses=['history','math','physics','datascience']
 
 random_course=random.choice(courses)
 print (random_course)
-today=datetime.date.today()
+today=time.date.today()
 print(today)
 
 print(os.getcwd())
